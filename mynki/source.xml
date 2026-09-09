@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.2">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/source.xml" />
 		</update>
 	</info>
 	<element name="Mynki 'n Co" type="Source" source="Mynki" id="ID_WSH_SOURCE_MYNKI">
