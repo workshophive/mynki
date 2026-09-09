@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mynki</name>
+		<update version="0.0.1">
+			<file name="race-mynki.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/race-mynki.xml" />
+		</update>
+	</info>
+	
+	<element name="Mynki" type="Race" source="Mynki 'n Co" id="ID_RACE_MYNKI">
+		<description>
+			<p class="flavor">In most senses, mynki should be an impossible race. They bleed cotton and silver, do not need to breathe, able to sense out traps and hidden tricks with minimal effort. They hail from their home of Hivihiri, a world that makes the impossible race... possible. Tricksters and geists at heart, they say wherever a mynki is, trouble is soon to follow.</p>
+			
+			<h4>LIVING COTTONS AND CABLES</h4>
+			<p>Mynki are visibly unearthly. That is that.</p>
+			<p>They resemble plush or stuffed minks, stoats, ferrets, et cetera, with glowing "plastic" eyes that never seem to need to blink. Their chests unmoving. They tend to be around the same size as humans, usually a bit shorter, with little to no distinction between sexes- if they even have any. They weigh between 80 and 130 pounds on average.</p>
+			<p class="indent">Mynki coloration can be quite literally any color- however, they tend to be colored like the plushies they resemble. Different patches are common, and mynki will often repair injuries with any sort of fabric, no matter the appearance. They're covered in a dense but short coat of fur, with glowing eyes that resemble magical energy itself.</p>
+			
+			<h4>ALL THE WORLD WILL BE YOUR ENEMY</h4>
+			<p>For most cities or towns, mynki are a bad omen. They tend to live in the outskirts of cities, preferably larger ones, but will settle down wherever they please if one sees it fit. Mynki culture exalts tricks, to live and love and learn and thrive.</p>
+			<p class="indent">The mynki homeland, Hivihiri, is distant and vague. Some believe it to be a different plane, others a far-away land that only they have the path to. They keep their secrets, and keep them well.</p>
+			
+			<h4>MYNKI NAMES</h4>
+			<p>Yada yada. I'll add this later, I'm tired.</p>
+			<ul class="unstyled">
+				<li><strong>Typical Mynki Names:</strong> Silk-Lace, Silk-Phantom, Bengaline-Burlap, Eridanus-Grenadine, Lockstitch-Melton, Longcloth-Carrickmacross, Drugget-Drill, Saye-Ripstop</li>
+				<li><strong>“Virtue” Names:</strong> Art, Carrion, Chant, Creed, Despair, Excellence, Fear, Glory, Hope, Ideal, Music, Nowhere, Open, Poetry, Quest, Random, Reverence, Sorrow, Temerity, Torment, Weary</li>
+			</ul>
+			
+			<h4>MYNKI TRAITS</h4>
+			<p>Mynki share certain racial traits and all that jazz.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2, and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Mynki grow and age around the same rate as dragonborns, but can live to around 200 years.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Mynki are about the same size and build as humans, albeit usually smaller. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Chromatic Abberation.</em></strong> Due to the innate magic from the mynki home of Hivihiri, they sport a strange ability dubbed Abberation. You know the thaumaturgy cantrip. Once you reach 3rd level, you can also cast the chromatosphere spell once per day. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Plushchirp. Plushchirp is practically incomprehensible to most other species.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="typical">Silk, Lace, Phantom, Bengaline, Burlap, Eridanus, Grenadine, Lockstitch, Melton, Longcloth, Carrickmacross, Drugget, Drill, Saye, Ripstop, Barathea, Woven, Knit, Canvas, Chiffon, Dupioni, Etamine, Betelgeuse, Reticella, Russell</set>
+			<set name="names" type="virtue">Art, Carrion, Chant, Creed, Despair, Excellence, Fear, Glory, Hope, Ideal, Music, Nowhere, Open, Poetry, Quest, Random, Reverence, Sorrow, Temerity, Torment, Weary</set>
+			<set name="names-format">{{name}}-{{name}}</set>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="2d4">95 lb.</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" />
+			<stat name="wisdom" value="1" />
+			<state name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_PLUSHCHIRP" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ABBERATION" />
+		</rules>
+	</element>
+	
+	<element name="Chromatic Abberation" type="Racial Trait" source="Mynki 'n Co" id="ID_RACIAL_TRAIT_ABBERATION">
+		<description>
+			<p>You know the thaumaturgy cantrip. Once you reach 3rd level, you can also cast the chromatosphere spell once per day. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the thaumaturgy cantrip. (Charisma)</description>
+			<description level="3">You know the thaumaturgy cantrip. You can cast the chromatosphere spell as a 2nd-level spell (1/long rest). (Charisma)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+			<grant type="Spell" id="ID_MNC_SPELL_CHROMATOSPHERE" level="3" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/source.xml" />
+		</update>
+	</info>
+	<element name="Mynki 'n Co" type="Source" source="Mynki" id="ID_WSH_SOURCE_MYNKI">
+		<description>
+			hehehe i put mynki in dungeons and dragons
+		</description>
+		<setters>
+			<set name="abbreviation">MnC</set>
+			<set name="author" abbreviation="WSH" url="https://github.com/workshophive">Workshop Hive</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20261010</set>
+		</setters>
+	</element>
+</elements>

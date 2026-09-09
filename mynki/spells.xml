@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Chromatosphere" type="Spell" source="Mynki 'n Co" id="ID_MNC_SPELL_CHROMATOSPHERE">
+		<supports>Warlock</supports>
+		<description>
+			<p>You hurl a mass of pure light chaos. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Constitution saving throw or take 1d6 radiant damage.</p>
+			<p class="indent">This spell's damage increases by 1d6 when you reach 8th level (2d6), 13th level (3d6), and 18th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">80 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

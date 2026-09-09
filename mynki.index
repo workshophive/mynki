@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Mynki 'n Co</name>
+		<description>i put mynki in dnd lol</description>
+		<update version="1.0.0">
+			<file name="mynki.index" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/source.xml" />
+		
+		<file name="race-mynki.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/race-mynki.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/languages.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/spells.xml" />
+	</files>
+</index>

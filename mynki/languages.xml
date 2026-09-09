@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/workshophive/mynki/master/mynki/languages.xml" />
+		</update>
+	</info>
+	
+	<element name="Plushchirp" type="Language" source="Mynki 'n Co" id="ID_LANGUAGE_PLUSHCHIRP">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by mynki.</p>
+		</description>
+		<setters>
+			<set name="standard">false</set>
+			<set name="speakers">Mynki</set>
+			<set name="script">Elvish</set>
+		</setters>
+	</element>
+</elements>
